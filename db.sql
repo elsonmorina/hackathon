@@ -4,5 +4,6 @@ CREATE TABLE `users`(
     `surname` varchar(255) NOT NULL,
     `email` varchar(255) NOT NULL,
     `country` varchar(255) NOT NULL,
-    `amount` int(1000) NOT NULL
+    `amount` int(1000) NOT NULL,
+    `credit card`int(255) NOT NULL
 );

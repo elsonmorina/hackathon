@@ -12,7 +12,7 @@
       line-height: 1.6;
     }
     .hero {
-      background: url('https://images.unsplash.com/photo-1611095969563-cc9630bd58c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+      background:url('war_images/gaza.jpg')no-repeat center center/cover;
       height: 350px;
       color: white;
       display: flex;
@@ -56,42 +56,33 @@
       margin-top: 4rem;
       padding-bottom: 2rem;
     }
-    .hero {
-  background: url('https://www.warchild.net/media/original_images/Gazajuli24-websiteheader.jpg.1262x662_q85_upscale.jpg') no-repeat center center/cover;
-  height: 350px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
-  margin-bottom: 40px;
+    .war-navbar {
+      background-color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .war-navbar .navbar-brand {
+      color: #ffc107 !important;
+      font-weight: bold;
+    }
+    .war-navbar .nav-link {
+      color: #f8f9fa !important;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    .war-navbar .nav-link:hover {
+      color: #ff6b6b !important;
+      text-decoration: underline;
+    }
+    .war-navbar .navbar-toggler {
+      border-color: rgba(255, 255, 255, 0.6);
+    }
+    .war-navbar .nav-link.active {
+  color: #ffc107 !important;  /* For example, a yellow accent */
+  font-weight: 700;
+  text-decoration: none;
+  background-color: transparent;
 }
-.war-navbar {
-  background-color: #333;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.war-navbar .navbar-brand {
-  color: #ffc107 !important; /* warm yellow */
-  font-weight: bold;
-}
-
-.war-navbar .nav-link {
-  color: #f8f9fa !important; /* light gray */
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.war-navbar .nav-link:hover {
-  color: #ff6b6b !important; /* soft red hover */
-  text-decoration: underline;
-}
-
-.war-navbar .navbar-toggler {
-  border-color: rgba(255, 255, 255, 0.6);
-}
-
 
   </style>
 </head>
@@ -107,7 +98,7 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="children_in_war.php">Children in War</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Children in War</a></li>
           <li class="nav-item"><a class="nav-link" href="Donate.php">Donate</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
         </ul>
@@ -115,32 +106,31 @@
     </div>
   </nav>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="#">Countries in Gaza</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#warCountriesNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse justify-content-end" id="warCountriesNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="children_in_war.php">Gaza</a></li>
-        <li class="nav-item"><a class="nav-link" href="syria.php">Syria</a></li>
-        <li class="nav-item"><a class="nav-link" href="yemen.php">Yemen</a></li>
-        <li class="nav-item"><a class="nav-link" href="sudan.php">Sudan</a></li>
-        <li class="nav-item"><a class="nav-link" href="ukraine.php">Ukraine</a></li>
-        <li class="nav-item"><a class="nav-link" href="Afghanistan.php">Afghanistan</a></li>
-        <li class="nav-item"><a class="nav-link" href="Congo.php">Congo (DRC)</a></li>
-        <li class="nav-item"><a class="nav-link" href="ethiopia.php">Ethiopia</a></li>
-      </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark war-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">Countries in War</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#warCountriesNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="warCountriesNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="children_in_war.php">Gaza</a></li>
+          <li class="nav-item"><a class="nav-link" href="syria.php">Syria</a></li>
+          <li class="nav-item"><a class="nav-link" href="yemen.php">Yemen</a></li>
+          <li class="nav-item"><a class="nav-link" href="sudan.php">Sudan</a></li>
+          <li class="nav-item"><a class="nav-link" href="ukraine.php">Ukraine</a></li>
+          <li class="nav-item"><a class="nav-link" href="Afghanistan.php">Afghanistan</a></li>
+          <li class="nav-item"><a class="nav-link" href="Congo.php">Congo (DRC)</a></li>
+          <li class="nav-item"><a class="nav-link" href="ethiopia.php">Ethiopia</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
 
   <!-- Hero Section -->
   <div class="hero">
-    <h1>Children in War</h1>
+    <h1>Children in Gaza</h1>
   </div>
 
   <div class="content">

@@ -12,7 +12,7 @@
       line-height: 1.6;
     }
     .hero {
-      background: url('https://upload.wikimedia.org/wikipedia/commons/f/ff/Afghan_children_in_a_classroom.jpg') no-repeat center center/cover;
+      background:url('war_images/afghanistan.jpg')no-repeat center center/cover;
       height: 350px;
       color: white;
       display: flex;
@@ -77,6 +77,12 @@
     .war-navbar .navbar-toggler {
       border-color: rgba(255, 255, 255, 0.6);
     }
+    .war-navbar .nav-link.active {
+  color: #ffc107 !important;  /* For example, a yellow accent */
+  font-weight: 700;
+  text-decoration: none;
+  background-color: transparent;
+}
   </style>
 </head>
 <body>
@@ -91,7 +97,7 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="children_in_war.php">Children in War</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Children in War</a></li>
           <li class="nav-item"><a class="nav-link" href="Donate.php">Donate</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
         </ul>

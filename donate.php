@@ -44,6 +44,52 @@
       margin-top: 4rem;
       padding-bottom: 2rem;
     }
+    /* Container margin bottom */
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+
+/* Label styling */
+label.form-label {
+  display: block;
+  font-weight: 600;
+  color: #b22222; /* same as your h2 headings */
+  margin-bottom: 0.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Select styling */
+select#Country {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #fff8f0; /* match body background */
+  border: 2px solid #b22222; /* match heading color */
+  border-radius: 5px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  appearance: none; /* removes default arrow for some browsers */
+  background-image:
+    linear-gradient(45deg, transparent 50%, #b22222 50%),
+    linear-gradient(135deg, #b22222 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 25px) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+/* Focus style */
+select#Country:focus {
+  border-color: #a03030;
+  box-shadow: 0 0 5px #a03030;
+  outline: none;
+}
+
   </style>
 </head>
 <body>
@@ -89,12 +135,25 @@
 
     <div class="mb-3">
       <label for="country" class="form-label">Country *</label>
-      <input type="text" class="form-control" id="country" name="country" required>
+      <select name="Country" id="Country" form="Country">
+  <option value="Gaza">Gaza</option>
+  <option value="Syria">Syria</option>
+  <option value="Yemen">Yemen</option>
+  <option value="Sudan">Sudan</option>
+  <option value="Ukraine">Ukraine</option>
+  <option value="Afghanistan">Afghanistan</option>
+  <option value="Congo">Congo</option>
+  <option value="Ethiopia">Ethiopia</option>
+</select>
     </div>
 
     <div class="mb-3">
       <label for="amount" class="form-label">Donation Amount (USD) *</label>
       <input type="number" class="form-control" id="amount" name="amount" required min="1">
+    </div>
+    <div class="mb-3">
+      <label for="amount" class="form-label">Credit Card *</label>
+      <input type="number" class="form-control" id="amount" name="creditcard" >
     </div>
 
     <button type="submit" class="btn btn-danger w-100">Donate Now</button>
