@@ -12,7 +12,7 @@
       line-height: 1.6;
     }
     .hero {
-      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+      background: url('war_images/donation.jpg') no-repeat center center/cover;
       height: 250px;
       color: white;
       display: flex;
@@ -153,7 +153,7 @@ select#Country:focus {
     </div>
     <div class="mb-3">
       <label for="amount" class="form-label">Credit Card *</label>
-      <input type="number" class="form-control" id="amount" name="creditcard" >
+      <input type="text" class="form-control" id="amount" name="creditcard" >
     </div>
 
     <button type="submit" class="btn btn-danger w-100">Donate Now</button>

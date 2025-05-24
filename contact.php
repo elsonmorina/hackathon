@@ -17,7 +17,7 @@
     }
     
     .hero {
-  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1280&q=80') no-repeat center center/cover;
+  background: url('war_images/contact.webp') no-repeat center center/cover;
   height: 350px;
   color: white;
   display: flex;
