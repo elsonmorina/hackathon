@@ -56,33 +56,52 @@
       margin-top: 4rem;
       padding-bottom: 2rem;
     }
-    .war-navbar {
-      background-color: #333;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-    .war-navbar .navbar-brand {
-      color: #ffc107 !important;
-      font-weight: bold;
-    }
-    .war-navbar .nav-link {
-      color: #f8f9fa !important;
-      font-weight: 500;
-      transition: color 0.3s ease;
-    }
-    .war-navbar .nav-link:hover {
-      color: #ff6b6b !important;
-      text-decoration: underline;
-    }
-    .war-navbar .navbar-toggler {
-      border-color: rgba(255, 255, 255, 0.6);
-    }
+.war-navbar {
+  flex-direction: column;
+  width: auto;
+  position: absolute;
+  top: 58px; 
+  left: 0;
+  background-color: #333;
+  padding: 10px 0;
+  border-radius: 0 6px 6px 0;
+  z-index: 1000;
+}
+
+.war-navbar .navbar-collapse {
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.war-navbar .navbar-nav {
+  flex-direction: column;
+}
+
+.war-navbar .nav-item {
+  width: 100%;
+}
+
+.war-navbar .nav-link {
+  display: block;
+  padding: 10px 15px;
+  width: 180px;
+  white-space: nowrap;
+  border-bottom: 1px solid #444;
+}
     .war-navbar .nav-link.active {
   color: #ffc107 !important;  /* For example, a yellow accent */
   font-weight: 700;
   text-decoration: none;
   background-color: transparent;
 }
+@media (max-width: 991.98px) {
+  .war-navbar .navbar-collapse {
+    display: none !important;
+  }
+}
+
+
 
   </style>
 </head>
@@ -109,12 +128,13 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark war-navbar">
     <div class="container">
-      <a class="navbar-brand" href="#">Countries in War</a>
+      <!-- <a class="navbar-brand" href="#">Countries in War</a> -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#warCountriesNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="warCountriesNav">
         <ul class="navbar-nav">
+          <a class="navbar-brand" href="#">Countries in War</a>
           <li class="nav-item"><a class="nav-link active" href="children_in_war.php">Gaza</a></li>
           <li class="nav-item"><a class="nav-link" href="syria.php">Syria</a></li>
           <li class="nav-item"><a class="nav-link" href="yemen.php">Yemen</a></li>
