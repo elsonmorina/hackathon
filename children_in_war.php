@@ -101,6 +101,7 @@
           <li class="nav-item"><a class="nav-link active" href="#">Children in War</a></li>
           <li class="nav-item"><a class="nav-link" href="Donate.php">Donate</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="dashboard.php">Dashboard</a></li>
         </ul>
       </div>
     </div>

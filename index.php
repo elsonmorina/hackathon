@@ -73,6 +73,7 @@
           <li class="nav-item"><a class="nav-link" href="children_in_war.php">Children in War</a></li>
           <li class="nav-item"><a class="nav-link" href="donate.php">Donate</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="dashboard.php">Dashboard</a></li>
         </ul>
       </div>
     </div>

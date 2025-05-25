@@ -5,5 +5,5 @@ CREATE TABLE `users`(
     `email` varchar(255) NOT NULL,
     `country` varchar(255) NOT NULL,
     `amount` int(1000) NOT NULL,
-    `credit card`int(255) NOT NULL
+    `credit_card`int(255) NOT NULL
 );

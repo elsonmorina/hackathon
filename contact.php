@@ -68,6 +68,7 @@
         <li class="nav-item"><a class="nav-link" href="children_in_war.php">Children in War</a></li>
         <li class="nav-item"><a class="nav-link" href="donate.php">Donate</a></li>
         <li class="nav-item"><a class="nav-link active" href="contact.php">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="dashboard.php">Dashboard</a></li>
       </ul>
     </div>
   </div>
@@ -87,7 +88,7 @@
     Amman, Jordan</p>
 
     <h5><strong>📞 Phone:</strong></h5>
-    <p>+962 7 9999 9999</p>
+    <p>+383-44-280-009</p>
 
     <h5><strong>📧 Email:</strong></h5>
     <p><a href="mailto:contact@hopeforchildren.org">contact@hopeforchildren.org</a></p>
@@ -96,7 +97,7 @@
     <p>Sunday – Thursday: 9:00 AM – 5:00 PM<br>GMT +3</p>
   </div>
 
-  <!-- Contact Form -->
+  <!-- Contact Form
   <form action="contact.php" method="POST">
     <div class="mb-3">
       <label for="name" class="form-label">Your Name *</label>
@@ -120,7 +121,7 @@
 
     <button type="submit" class="btn btn-danger w-100">Send Message</button>
   </form>
-</div>
+</div> -->
 
 <!-- Footer -->
 <div class="footer">

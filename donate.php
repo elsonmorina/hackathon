@@ -59,7 +59,7 @@ label.form-label {
 }
 
 /* Select styling */
-select#Country {
+select#country {
   width: 100%;
   padding: 0.5rem 0.75rem;
   font-size: 1rem;
@@ -84,7 +84,7 @@ select#Country {
 }
 
 /* Focus style */
-select#Country:focus {
+select#country:focus {
   border-color: #a03030;
   box-shadow: 0 0 5px #a03030;
   outline: none;
@@ -107,6 +107,7 @@ select#Country:focus {
         <li class="nav-item"><a class="nav-link" href="children_in_war.php">Children in War</a></li>
         <li class="nav-item"><a class="nav-link active" href="donate.php">Donate</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="dashboard.php">Dashboard</a></li>
       </ul>
     </div>
   </div>
@@ -117,7 +118,7 @@ select#Country:focus {
 </div>
 
 <div class="container">
-  <form action="donate.php" method="POST" novalidate>
+  <form action="donateLogic.php" method="POST" novalidate>
     <div class="mb-3">
       <label for="name" class="form-label">First Name *</label>
       <input type="text" class="form-control" id="name" name="name" required>
@@ -134,8 +135,8 @@ select#Country:focus {
     </div>
 
     <div class="mb-3">
-      <label for="country" class="form-label">Country *</label>
-      <select name="Country" id="Country" form="Country">
+      <label name="country" for="country" class="form-label">Country *</label>
+      <select  name="country" id="country"  required>
   <option value="Gaza">Gaza</option>
   <option value="Syria">Syria</option>
   <option value="Yemen">Yemen</option>
@@ -148,15 +149,15 @@ select#Country:focus {
     </div>
 
     <div class="mb-3">
-      <label for="amount" class="form-label">Donation Amount (USD) *</label>
+      <label name="amount" for="amount" class="form-label">Donation Amount (USD) *</label>
       <input type="number" class="form-control" id="amount" name="amount" required min="1">
     </div>
     <div class="mb-3">
       <label for="amount" class="form-label">Credit Card *</label>
-      <input type="text" class="form-control" id="amount" name="creditcard" >
+      <input name="credit_card" type="text" class="form-control" id="amount" name="credit_card" >
     </div>
 
-    <button type="submit" class="btn btn-danger w-100">Donate Now</button>
+    <button name="submit"  type="submit" class="btn btn-danger w-100">Donate Now</button>
   </form>
 </div>
 
