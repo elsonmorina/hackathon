@@ -100,7 +100,34 @@
     display: none !important;
   }
 }
+.war-navbar .navbar-brand {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffc107 !important; /* Bootstrap warning yellow */
+  padding: 0.5rem 1rem;
+  border-left: 4px solid #ffc107;
+  margin-right: 1rem;
+}
 
+/* Optional: Add hover effect */
+.war-navbar .navbar-brand:hover {
+  color: #fff8dc !important;
+}
+.war-navbar {
+  flex-direction: column;
+  width: auto;
+  position: absolute;
+  top: 58px;
+  bottom: 0; /* Add this */
+  left: 0;
+  background-color: #333;
+  padding: 10px 0;
+  border-radius: 0 6px 6px 0;
+  z-index: 1000;
+  height: calc(100vh - 58px); /* Make it full height minus top offset */
+  overflow-y: auto; /* Optional: scroll if items overflow */
+}
 
 
   </style>
